@@ -6,6 +6,26 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <title>Gallery &#8211; HAMEPROMETAL</title>
 <meta name='robots' content='max-image-preview:large'>
+		
+	<script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+	</script>
+	
 <link rel='dns-prefetch' href='https://fonts.googleapis.com'>
 <link rel='dns-prefetch' href='https://s.w.org'>
 <link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
