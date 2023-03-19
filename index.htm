@@ -7,6 +7,25 @@
     <title>HAMEPROMETAL</title>
 <meta name='robots' content='max-image-preview:large'>
 	
+	<script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+	</script>
+
 <meta property="og:title" content="HA-ME PROMETAL">
 <meta property="og:type" content="article" />
 <meta property="og:image" content="http://hameprometal.mk/images/20230307_235104_0000.jpg">
